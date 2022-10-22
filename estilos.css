@@ -64,17 +64,23 @@ header .carrocompras{
  }
 
 main .primerdiv{
-   background-image: url(./Imagenes/slider-2.jpg);
-   background-repeat: no-repeat;
-   padding: 18rem; 
-   margin: 2rem;
-   min-width: 50rem;
-   margin-top: 1rem;
+    background-image: url(Imagenes/slider-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main div h1{
     justify-content: center;
     text-align: center;
+    font-family: 'Playfair Display';
+    font-size: 4rem;
+    font-weight: 100;
 }
 
 main a{
@@ -83,7 +89,9 @@ main a{
     justify-content: center;
     font-size:14px;
     padding: 1rem;
-    color: black;
+    color: #333333;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 
@@ -355,7 +363,7 @@ main .segundodiv p{
 
 
 
-.footer_parte1{
+.footer1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -379,7 +387,7 @@ main .segundodiv p{
 
 
 
-.footer_parte2{
+.footer2{
     background-color: #EBEBEB;
     display: flex;
     flex-wrap: wrap;
