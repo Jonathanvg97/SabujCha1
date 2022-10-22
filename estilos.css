@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: black;
+    font-family: "Work Sans";
+    /* font-family: 'Playfair Display';
+    font-family: "Lora"; */
+}
+
+html{
+    font-size: 16px; /*se establece el tamaño base de las fuentes*/
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem; /* separa de la margen las opciones de navegación*/
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header ul li {
+    display: flex;
+    padding: 1rem;
+    font-family: "Work Sans";
+}
+
+header ul li a{
+    text-decoration: none;
+}
+
+header .logo{
+    margin-right: 20rem;
+    justify-content: center;
+    align-items: center;
+}
+
+header select{
+    border: none; /*quitar los bordes del selector de idiomas*/
+    margin-right: -12rem;
+    font-family: "Work Sans";
+    
+} 
+
+header .carrocompras{
+    margin: 0;
+    margin-right: 6rem;
+} 
+
+
+
+/*estilos para el mainn*/
+ main{
+    justify-content: center;
+    align-items: center;
+ }
+
+main .primerdiv{
+   background-image: url("/Imagenes/slider-2.jpg");
+   background-repeat: no-repeat;
+   padding: 18rem; 
+   margin: 2rem;
+   min-width: 50rem;
+   margin-top: 1rem;
+}
+
+main div h1{
+    justify-content: center;
+    text-align: center;
+}
+
+main a{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size:14px;
+    padding: 1rem;
+    color: black;
+}
+
+
+
+.ul_div_2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: -5rem; /*SE UTILIZA PARA SEPARAR LAS DOS IMAGENES*/
+    list-style: none;
+    width: 100%;
+    padding: 5rem;
+}
+.ul_div_2 p{
+    color: #529F0F;
+    text-decoration: dashed;
+    font-family: "Lora";
+    ;
+}
+.ul_div_2 span{
+    font-weight: bold; 
+}
+
+
+.img1 {
+    background-image: url("/Imagenes/banner-1.png");
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 12rem;
+    width: 40rem;
+    
+    
+}
+
+.img2 {
+    background-image: url("/Imagenes/banner-2.png");
+    background-repeat: no-repeat;
+    margin: 0;
+    padding:12rem; 
+    width: 40rem;
+   
+    
+}
+
+main .segundodiv p{
+    color: #529F0F;
+    font-size: 2.5rem;
+    text-decoration: dashed;
+    font-family: "Lora";
+}
+  
+
+
+
+
+.tercerdiv{
+    background-image: url("./Imagenes/bg-1.jpg");
+    margin-top: -10rem;
+    
+}
+
+.latesProduct{
+    padding: 0.5rem;
+    font-family: 'Playfair Display';
+    text-align: center;
+    font-weight: 100;
+    padding-top: 5rem;
+}
+
+.lates2{
+    padding: 0.5rem;
+    font-family: 'Playfair Display';
+    text-align: center;
+    font-weight: 100;
+    padding-top: 1rem;
+}
+
+.productos{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1.5rem;
+    padding: 3rem 0rem;
+}
+.productos li a,.p_productos,.precio_descuento, .precio_sin_descuento{
+    text-align: left;
+    flex-direction: column;
+    text-decoration: none;
+    color:#888888;
+    font-weight: bold;
+}
+
+.p_productos{
+    padding: 0.5rem;
+    
+}
+.precio_descuento{
+    font-size: 0.9rem;
+    color: #333333;
+    padding: 0.5rem;
+}
+.precio_sin_descuento{
+    text-decoration: line-through;
+    padding: 0;
+    font-size: 0.9rem;
+} 
+
+
+
+.cuartodiv{
+    margin: 8rem;
+    text-align: center;
+    color: #6d6c6c;
+}
+.cuartodiv p{
+    padding: 0.5rem;
+    font-family: 'Lora';
+    font-style: italic;
+    font-size: 2rem;
+}
+.Gre{
+    margin-top: 2.1rem;
+    display: block;
+    font-weight: bold;
+}
+.customer{
+    color: #888888;
+    font-weight: bold;
+    padding-top: 1rem;
+
+}
+
+
