@@ -221,3 +221,159 @@ main .segundodiv p{
 }
 
 
+/* ---------DIV 5-------------- */
+.quintodiv{
+    background-color: #F3F3F3;
+}
+.quintodiv h1{
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    font-family: 'Playfair Display';
+    text-align: center;
+    font-weight: 100;
+}
+.quintodiv p{
+    padding: 0.5rem;
+    font-family: 'Playfair Display';
+    text-align: center;
+}
+.quintodiv .productos li .p_productos{
+    text-align: left;
+}
+
+.newpro{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1.5rem;
+    padding: 3rem 0rem;
+}
+
+/* ---------DIV 6-------------- */
+.div_6{
+    justify-content: flex-start;
+    background-image: url(Imagenes/bg-2.jpg);
+    background-size: 2200px 960px;
+    height: 35vh;
+}
+
+.h1_div6{
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    font-family: 'Playfair Display';
+    text-align: center;
+    font-weight: 100;
+}
+.form_div6{
+    text-align: center;
+    padding: 1.7rem;
+}
+input{
+    padding: 1rem;
+}
+.email{
+    font-family: 'Lora';
+    width: 30%;
+}
+.subscribe{
+    font-family: 'Work Sans';
+    background-color: black;
+    color: #F3F3F3;
+}
+/* ---------DIV 7-------------- */
+.div_7{
+    background-image: url(./Imagenes/bg-1.jpg);
+}
+.h1_div7{
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    font-family: 'Playfair Display';
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 100;
+}
+.ul_div7{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1.5rem;
+    padding: 3rem 0rem;
+}
+.p1_div7{
+    font-family: 'Lora';
+    color: #529F0F;
+    font-style:italic ;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 1rem;
+}
+.h2_div7{
+    font-family: 'Playfair Display';
+    font-weight: 100;
+    padding: 1.2rem 0rem;
+}
+.p2_div7{
+    font-family: 'Lora';
+    font-weight: 100;
+    line-height: 1.8rem;
+}
+.a_div7{
+    text-decoration: underline;
+    padding: 1.8rem 0rem;
+    display: block;
+    font-weight: bold;
+}
+/* ---------DIV 8-------------- */
+.ul_div8{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 6rem;
+    gap: 3rem;
+}
+/* ---------FOOTER PARTE 1 ------------ */
+.footer_parte1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 6rem;
+    background-color: #f8f8f8;
+    font-family: 'Playfair Display';
+}
+.ul_footer li{
+    list-style: none;
+    padding: 0.5rem;
+}
+.ul_footer li,a{
+    text-decoration: none;
+    color: #333333;
+}
+.a_ul_footer{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+/* ---------FOOTER PARTE 2 ------------ */
+.footer_parte2{
+    background-color: #EBEBEB;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.sabujcha_footer{
+    padding: 1rem;
+}
+.img_footer{
+    padding: 1rem;
+}
+
+
