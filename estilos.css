@@ -396,3 +396,77 @@ main .segundodiv p{
 }
 
 
+
+    /* Codigo para establecer medidas responsive*/
+
+/*-MEDIA QUERIE MAX WIDTH 600PX*/
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 10px;
+
+    }
+/*heaader*/
+
+    header ul{
+        display: none;
+    }
+    .carrocompras{
+        display: none;
+    }
+    .menu{
+        display:inline;
+        width: 18px;
+        height: 18px;
+    }
+    
+
+    /*main*/
+    
+    .primerdiv {
+        justify-content: flex-start;
+        background-image: url(Imagenes/slider-2.jpg);
+        background-size: 550px 250px;
+        height: 40vh;
+    }
+    .primerdiv h1{
+        font-size: 2.5rem;
+        padding-top: 5rem;
+    }
+   
+
+    .segundodiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .img1{
+        height: 28vh;
+        width: 50vh;
+        background-size: 25rem 13.6rem;
+    }
+    .img2{
+        height: 28vh;
+        width: 50vh;
+        background-size: 25rem 13.6rem;
+    }
+  
+
+    .sextodiv{
+        justify-content: flex-start;
+        background-image: url(Imagenes/bg-2.jpg);
+        background-size: 25rem 18.75rem;
+        height: 35vh;
+    }
+    .email{
+        font-family: 'Lora';
+        width: 55%;
+    }
+
+    .img7{
+        width: 247px;
+    }
+   
+
+    .footer1{
+        justify-content: center;
+    }
+    
