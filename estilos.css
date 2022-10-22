@@ -296,11 +296,10 @@ main .segundodiv p{
 
 
 
-
 .septimodiv{
     background-image: url(./Imagenes/bg-1.jpg);
 }
-.septimodiv h1{
+.div7titulo{
     padding-top: 5rem;
     padding-bottom: 1rem;
     font-family: 'Playfair Display';
@@ -308,7 +307,7 @@ main .segundodiv p{
     text-decoration: underline;
     font-weight: 100;
 }
-.septimodiv ul{
+.div7lista{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -317,7 +316,7 @@ main .segundodiv p{
     gap: 1.5rem;
     padding: 3rem 0rem;
 }
-.septimodiv p{
+.fecha7{
     font-family: 'Lora';
     color: #529F0F;
     font-style:italic ;
@@ -326,28 +325,23 @@ main .segundodiv p{
     text-decoration: underline;
     padding-top: 1rem;
 }
-.septimodiv h2{
+.des7{
     font-family: 'Playfair Display';
     font-weight: 100;
     padding: 1.2rem 0rem;
 }
-.p2_div7{
+.des2-7{
     font-family: 'Lora';
     font-weight: 100;
     line-height: 1.8rem;
 }
-.septimodiv span{
-    font-family: 'Lora';
-    font-weight: 100;
-    line-height: 1.8rem;
-}
-.septimodiv a{
+.link7{
     text-decoration: underline;
     padding: 1.8rem 0rem;
     display: block;
     font-weight: bold;
+    text-align: left;
 }
-
 
 
 .ul_div8{
@@ -372,11 +366,11 @@ main .segundodiv p{
     background-color: #f8f8f8;
     font-family: 'Playfair Display';
 }
-.ul_footer li{
+.listafooter li{
     list-style: none;
     padding: 0.5rem;
 }
-.ul_footer li,a{
+.listafooter li,a{
     text-decoration: none;
     color: #333333;
 }
