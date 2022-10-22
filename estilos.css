@@ -253,25 +253,25 @@ main .segundodiv p{
 }
 
 /* ---------DIV 6-------------- */
-.div_6{
+.sextodiv{
     justify-content: flex-start;
-    background-image: url(Imagenes/bg-2.jpg);
+    background-image: url("Imagenes/bg-2.jpg");
     background-size: 2200px 960px;
     height: 35vh;
 }
 
-.h1_div6{
+.sextodiv h1{
     padding-top: 5rem;
     padding-bottom: 1rem;
     font-family: 'Playfair Display';
     text-align: center;
     font-weight: 100;
 }
-.form_div6{
+.sextodiv form{
     text-align: center;
     padding: 1.7rem;
 }
-input{
+.sextodiv form input{
     padding: 1rem;
 }
 .email{
