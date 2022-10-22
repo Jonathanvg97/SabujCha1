@@ -221,7 +221,7 @@ main .segundodiv p{
 }
 
 
-/* ---------DIV 5-------------- */
+
 .quintodiv{
     background-color: #F3F3F3;
 }
@@ -252,7 +252,9 @@ main .segundodiv p{
     padding: 3rem 0rem;
 }
 
-/* ---------DIV 6-------------- */
+
+
+
 .sextodiv{
     justify-content: flex-start;
     background-image: url("Imagenes/bg-2.jpg");
@@ -283,11 +285,14 @@ main .segundodiv p{
     background-color: black;
     color: #F3F3F3;
 }
-/* ---------DIV 7-------------- */
-.div_7{
-    background-image: url(./Imagenes/bg-1.jpg);
+
+
+
+
+.septimodiv{
+    background-image: url("./Imagenes/bg-1.jpg");
 }
-.h1_div7{
+.septimodiv h1{
     padding-top: 5rem;
     padding-bottom: 1rem;
     font-family: 'Playfair Display';
@@ -295,7 +300,7 @@ main .segundodiv p{
     text-decoration: underline;
     font-weight: 100;
 }
-.ul_div7{
+.septimodiv ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -304,7 +309,7 @@ main .segundodiv p{
     gap: 1.5rem;
     padding: 3rem 0rem;
 }
-.p1_div7{
+.septimodiv p{
     font-family: 'Lora';
     color: #529F0F;
     font-style:italic ;
@@ -313,7 +318,7 @@ main .segundodiv p{
     text-decoration: underline;
     padding-top: 1rem;
 }
-.h2_div7{
+.septimodiv h2{
     font-family: 'Playfair Display';
     font-weight: 100;
     padding: 1.2rem 0rem;
@@ -323,7 +328,12 @@ main .segundodiv p{
     font-weight: 100;
     line-height: 1.8rem;
 }
-.a_div7{
+.septimodiv span{
+    font-family: 'Lora';
+    font-weight: 100;
+    line-height: 1.8rem;
+}
+.septimodiv a{
     text-decoration: underline;
     padding: 1.8rem 0rem;
     display: block;
