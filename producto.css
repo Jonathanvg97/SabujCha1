@@ -1,0 +1,329 @@
+*{
+    box-sizing: border-box;/*Regula el tamaño, no permite que se desborden*/
+}
+/*Quita el Scroll*/
+::-webkit-scrollbar {
+    display: none;
+}
+/*Modifica el txt sobre la 1ra imagen homepage*/
+h1{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 35;
+}
+h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    font-size: 30;
+    color: #333333;
+    text-align: center;
+}
+h3{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 30;
+    color: #575757;
+}
+h4{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 20;
+    color: #333333;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+/*1er Container Body
+Encabezado
+Se implementa un display tipo grilla de 3 columnas de misma medida y una sola fila */
+header{
+    display:grid;
+    grid-template-columns: 2fr 4fr 1fr;
+    padding: 0 0;
+}
+/*Barra de Navegación*/
+.nav{
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    justify-content: flex-end;
+}
+/*Estilo letra nav*/
+.nave{
+    list-style: none;/*quita la numeracion*/
+    display:flex; /*acomoda los items en linea*/
+    justify-content: flex-end;/*Da espaciado items del nav*/
+    padding-left:0;/*Quita espacio por defecto de la lista*/
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+.nave li{
+    padding: 35;
+}
+/*Logo Te*/
+.nave1{
+    grid-area: 1 / 1 / 2 / 2;
+    align-self: center;
+    justify-self: flex-end;
+}
+/*Despliegue*/
+.pay{
+    grid-area: 1 / 3 / 2 / 4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20;
+}
+/*USD*/
+.pay1{
+    padding: 0 20; /*Da espaciado entre USD y flecha*/
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+.pay2{
+    width: 10;
+    height: 10;
+}
+/*Carrito de compras*/
+.car{
+    transform: scaleX(-1);/*Genera un estilo espejo*/
+    padding: 0 20;
+}
+/*2do container Body*/
+.first{
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: #333333;
+}
+/*Clase slider
+.fi{
+    width: 100vw;/*Indica el %  del ancho que ocupara img. container
+    height: 100vh; /*Indica el % del largo que ocupara img. container*/
+/*Sección titulo*/
+.ft{
+    text-align: center;
+    margin-top: 0; /*Permite que el txt flote sobre la imagen*/
+}
+/*Txt subrayado "Home / Product"*/
+.ft1{
+    font-family: 'Lora', serif;
+    font-weight: lighter;
+    color: #fff;
+    font-size: 18;
+    padding-bottom: 0;
+}
+/*3er container body*/
+.second{
+    grid-area: 3 / 1 / 4 / 2; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 50 400;
+    justify-items: center;
+}
+/*Containers sale, 3ro Body*/
+.s1 {
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    grid-column: 1fr;
+    grid-template-rows: 1fr 1/2fr ;
+    padding: 0; /*Da espaciado entre imagenes*/
+} 
+/*Ubi imagen producto*/
+.s1a{
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+    height: 100%;
+}
+/*Ubi riel productos*/
+.s1b{
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*Flechas riel productos*/
+.s1c{
+    width: 20;
+    height: 20;
+}
+/*Img. riel*/
+.s1d{
+    padding: 0 20;
+}
+/*Ubi container descripción*/
+.s2{
+    grid-area: 1 / 2 / 2 / 2;
+}
+/*Ubi calificacion*/
+.s2a{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+/*Estilo estrellas general*/
+.s2b{
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: row;
+    width: 20;
+    height: 20;
+}
+.s2c{
+    grid-area:  1 / 2 / 1 / 3;
+}
+.green{
+    padding: 2;
+}
+.gray{
+    padding: 2;
+}
+.s2c{
+    display:flex;
+    flex-direction: row;
+}
+/*Txt containers sales*/
+.st{
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    font-family: 'Work Sans', sans-serif;
+    color: #575757;
+    font-size: 17;
+}
+/*4to container Body*/
+.third{
+    grid-area: 4 / 1 / 5 / 2;
+    display: grid;/*Aplicando grilla container 4*/
+    grid-template-columns: 1fr;
+    grid-template-rows: 1/2fr 1fr;
+}
+/*Estilo parrafo 4to. container*/
+.txt{
+    font-family: 'Lora', serif;
+    margin-top: 0;
+}
+/*4to Container secc1*/
+.t1{
+    grid-area: 1 / 1 / 2 / 2;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+/*4to Container secc2*/
+.t2{
+    grid-area: 2 / 1 / 3 / 2;
+    justify-content: center;
+    line-height: 1.5;
+}
+/*Txt nombre Te*/
+.txt1{
+    font-family: 'Work Sans', sans-serif;
+    color: #575757;
+    font-size: 19;
+    font-weight: 500;
+}
+/*Txt precio actual Te*/
+.txt2{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: #333333;
+    font-size: 15;
+}
+/*Txt precio pasado Te*/
+.txt3{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: #575757;
+    font-size: 15;
+}
+/*5to container body*/
+.fourth{
+    grid-area: 5 / 1 / 6 / 2;
+    padding: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1/2fr 1fr;
+
+}
+.rel{
+    grid-area: 1 / 1 / 2 /5;
+}
+.rel1{
+    grid-area: 2 / 1 / 3 /2;
+}
+.rel2{
+    grid-area: 2 / 2 / 3 /3;
+}
+.rel3{
+    grid-area: 2 / 3 / 3 /4;
+}
+.rel4{
+    grid-area: 2 / 4 / 3 /5;
+}
+
+/*6to Container body*/
+.fifth{
+    grid-area: 6 / 1 / 7 / 2;
+    background-image: url("../img/bg-1.jpg");
+    margin: 50; /*Dando margen*/
+    display: grid;
+    grid-template-rows: 1/2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50 350;
+}
+/*6to Container*/
+footer{
+    grid-area: 7 / 1 / 8 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1/8fr;
+    line-height: 2;
+    padding: 0 300;
+}
+.d1{
+    grid-area: 1 / 1 / 2 / 2;
+}
+.d2{
+    grid-area: 1 / 2 / 2 / 3;
+}
+.d3{
+    grid-area: 1 / 3 / 2 / 4;
+}
+.d4{
+    grid-area: 1 / 4 / 2 / 5;
+}
+.li{
+    list-style: none;
+    padding-left: 0;
+    font-family: 'Lora', serif;
+    font-size: 16;
+    color:  #333333;
+}
+.d5{
+    grid-area: 2 / 1 / 3 / 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding-top: 50;
+}
+/*Ultimos elementos Footer*/
+.d6{
+    grid-area: 1 / 1  / 2 / 2;
+    font-family: 'Lora', serif;
+    font-size: 16;
+    color:  #333333;
+}
+.d7{
+    grid-area: 1 /  2  / 2 /  3;
+    display: flex;
+    justify-content: end;
+}
+.fa-heart{
+    color: #ff0000;
+}
+
