@@ -11,6 +11,8 @@
 
 6.	Se arregló el footer mediante un flex que pusiera en 4 columnas todas las descripciones pertinentes que debía tener la página.
 
+desplegar update readme para visualizar pantallazos
+
 
 
  
