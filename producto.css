@@ -1,60 +1,97 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;/*Regula el tamaño, no permite que se desborden*/
+}
+/*Quita el Scroll*/
+::-webkit-scrollbar {
+    display: none;
+}
+/*Modifica el txt sobre la 1ra imagen homepage*/
+h1{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 35;
+}
+h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    font-size: 30;
+    color: #333333;
+    text-align: center;
+}
+h3{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 30;
+    color: #575757;
+}
+h4{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 20;
+    color: #333333;
 }
 body{
-    color: black;
-    font-family: "Work Sans";
-    /* font-family: 'Playfair Display';
-    font-family: "Lora"; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
 }
-
-html{
-    font-size: 16px; /*se establece el tamaño base de las fuentes*/
-}
-
+/*1er Container Body
+Encabezado
+Se implementa un display tipo grilla de 3 columnas de misma medida y una sola fila */
 header{
+    display:grid;
+    grid-template-columns: 2fr 4fr 1fr;
+    padding: 0 0;
+}
+/*Barra de Navegación*/
+.nav{
+    grid-area: 1 / 2 / 2 / 3;
     display: flex;
-    justify-content:space-between;
+    justify-content: flex-end;
+}
+/*Estilo letra nav*/
+.nave{
+    list-style: none;/*quita la numeracion*/
+    display:flex; /*acomoda los items en linea*/
+    justify-content: flex-end;/*Da espaciado items del nav*/
+    padding-left:0;/*Quita espacio por defecto de la lista*/
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+.nave li{
+    padding: 35;
+}
+/*Logo Te*/
+.nave1{
+    grid-area: 1 / 1 / 2 / 2;
+    align-self: center;
+    justify-self: flex-end;
+}
+/*Despliegue*/
+.pay{
+    grid-area: 1 / 3 / 2 / 4;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    padding: 1rem; /* separa de la margen las opciones de navegación*/
+    padding: 0 20;
 }
-
-header ul{
-    display: flex;
-    list-style-type: none;
-    text-decoration: none;
+/*USD*/
+.pay1{
+    padding: 0 20; /*Da espaciado entre USD y flecha*/
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
 }
-
-header ul li {
-    display: flex;
-    padding: 1rem;
-    font-family: "Work Sans";
+.pay2{
+    width: 10;
+    height: 10;
 }
-
-header ul li a{
-    text-decoration: none;
+/*Carrito de compras*/
+.car{
+    transform: scaleX(-1);/*Genera un estilo espejo*/
+    padding: 0 20;
 }
-
-header .logo{
-    margin-right: 20rem;
-    justify-content: center;
-    align-items: center;
-}
-
-header select{
-    border: none; /*quitar los bordes del selector de idiomas*/
-    margin-right: -12rem;
-    font-family: "Work Sans";
-    
-} 
-
-header .carrocompras{
-    margin: 0;
-    margin-right: 6rem;
-} 
-
 /*2do container Body*/
 .first{
     grid-area: 2 / 1 / 3 / 2;
@@ -134,7 +171,6 @@ header .carrocompras{
     width: 20;
     height: 20;
 }
-
 .s2c{
     grid-area:  1 / 2 / 1 / 3;
 }
@@ -168,26 +204,56 @@ header .carrocompras{
 .txt{
     font-family: 'Lora', serif;
     margin-top: 0;
+    line-height:  18px;    
 }
+.s2e{
+    list-style-type:square;
+    ;
+}
+
+span{
+    color: #529F0F;
+}
+
+.etiquetas{
+    display: flex;
+    gap: 2rem;
+}
+
+.etiquetas2{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Lora', serif;
+}
+
 /*4to Container secc1*/
 .t1{
-    grid-area: 1 / 1 / 2 / 2;
-    text-align: center;
-    display: flex;
+    flex-wrap:wrap;
     flex-direction: row;
+    justify-content: center;
+    display: flex;
+    gap: 4rem;
+    
+}
+
+.desc{
+    color: #529F0F;
+    text-decoration: underline;
 }
 /*4to Container secc2*/
 .t2{
-    grid-area: 2 / 1 / 3 / 2;
+ 
     justify-content: center;
     line-height: 1.5;
+    padding-left: 8rem;
+    padding-right: 8rem;
 }
 /*Txt nombre Te*/
 .txt1{
     font-family: 'Work Sans', sans-serif;
     color: #575757;
-    font-size: 19;
-    font-weight: 500;
+    font-size: 14px;
+    
 }
 /*Txt precio actual Te*/
 .txt2{
@@ -240,7 +306,6 @@ header .carrocompras{
     padding: 50 350;
 }
 
-
 .footer1{
     display: flex;
     flex-wrap: wrap;
@@ -263,6 +328,8 @@ header .carrocompras{
     font-weight: bold;
 }
 
+
+
 .footer2{
     background-color: #EBEBEB;
     display: flex;
@@ -276,4 +343,5 @@ header .carrocompras{
 .img_footer{
     padding: 1rem;
 }
+
 

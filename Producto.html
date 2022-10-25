@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <!-- ------------------LINKEADO FUENTES DE GOOGLE ------------------>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="producto.css">
     <script src="https://kit.fontawesome.com/b59af0f90f.js" crossorigin="anonymous"></script>
@@ -15,26 +14,33 @@
    
     <header>
     <!----------------BARRA DE NAVEGACIÓN--------------------->    
-       
+        <nav>
             <!------------MENÚ-------------->
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">SHOP</a></li>
-                <li><a href="">BLOG</a></li>
-                <li><a href="">PAGES</a></li>
+            <ul class="nave">
+                <li class="navegacion"><a href="index.html"> HOME</a></li>
+                <li><a href="" > ABOUT</a></li>
+                <li><a href=""> SHOP</a></li>
+                <li><a href=""> BLOG</a></li>
+                <li><a href=""> PAGES</a></li>
                 <li><a href="">CONTACT</a></li>
             </ul>
+        </nav>
+            <!----------LOGO HEADER--------->
+        <section class="nave1">
+            <img src="./Imagenes/logo.png" alt="logo">
+        </section>
+            <!--ESPACIO CARRITO DE COMPRAS-->
+        <section class="pay">
         
-            <img class="logo" src="./Imagenes/logo.png" alt="">
-            <select name="" id="">
+            <select style="border: none;" name="" id="">
                 <option value="" selected>USD</option>
                 <option value="">COP</option>
                 <option value="">CAD</option>
                 <option value="">EUR</option>
                 <option value="">KRW</option>
             </select>
-            <img class="carrocompras" src="./Imagenes/carro.png" alt="">
+            <img src="./Imagenes/carro.png" alt="carrito-de-compras" class="car">-
+        </section>
     </header>
     <!--------------------2do CONTAINER BODY----------------->
     <section class="first">
@@ -84,20 +90,23 @@
             <div class="txt">
                 <p>Avalible: In Stock</br>Nam liber tempor cum soluta nobs eleifend option congue nihil doming id</br> id quod mazim placerat facer possim assum</p>
                 <ul class="s2e">
-                    <li>Protection Plan: 2 year $4.99</li>
-                    <li>Remote Holder: $9.99</li>
-                    <li>Koral Alexa Voice Remote Case: Red $16.99</li>
-                    <li>Amazon Basics HD Antenna: 25 Mile $14.99</li>
+                    <li>Protection Plan: <span> 2 year $4.99</span></li>
+                    <li>Remote Holder: <span> $9.99</span></li>
+                    <li>Koral Alexa Voice Remote Case: <span> Red $16.99</span></li>
+                    <li>Amazon Basics HD Antenna: <span> 25 Mile $14.99</span></li>
                 </ul>    
             </div>   
             <!--Secc Ionos--> 
-            <div>
+            <div class="etiquetas">
                 <p>Qty</p>
                 <i class="fa-solid fa-2"></i>
                 <i class="fa-solid fa-cart-shopping"></i>
                 <i class="fa-regular fa-heart"></i>
             </div>
-            <!--FALTA AGREGAR SECCION REDES SOCIALES-->
+            <div class="etiquetas2">
+                <p>categories: Green,  Herbal, Loose, Mate, Organic</p>
+                <p>Tags: Oolong, Pu'erh, Dark, Special</p>
+            </div>
             <div></div>
         </section>
     </section>
@@ -105,7 +114,7 @@
     <section class="third">
         <!------------SECC1-------------->
         <section class="t1">
-            <h2>Description</h2>
+            <h2 class="desc">Description</h2>
             <h2>Tags</h2>
             <h2>Review</h2>
         </section>
