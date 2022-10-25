@@ -226,6 +226,13 @@ span{
     font-family: 'Lora', serif;
 }
 
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+}
+
 /*4to Container secc1*/
 .t1{
     flex-wrap:wrap;
@@ -280,7 +287,8 @@ span{
 
 }
 .rel{
-    grid-area: 1 / 1 / 2 /5;
+    text-align: left;
+    text-decoration: underline;
 }
 .rel1{
     grid-area: 2 / 1 / 3 /2;
